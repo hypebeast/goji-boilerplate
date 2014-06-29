@@ -1,0 +1,14 @@
+{
+  "name": "goji-boilerplate",
+  "version": "0.1.0",
+  "description": "Projekt skeleton for Goji web framework",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "gulp-plumber": "~0.6.3",
+    "gulp-sass": "~0.7.2",
+    "gulp": "~3.8.5"
+  },
+  "author": "Sebastian Ruml",
+  "license": "MIT"
+}
