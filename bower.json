@@ -1,0 +1,17 @@
+{
+  "name": "goji-boilerplate",
+  "version": "0.0.0",
+  "authors": [
+    "Sebastian Ruml <sebastian.ruml@gmail.com>"
+  ],
+  "description": "Project skeleton for Goji web framework",
+  "license": "MIT",
+  "homepage": "http://github.com/hypebeast/goji-boilerplate",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
