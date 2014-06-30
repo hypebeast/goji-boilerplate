@@ -6,7 +6,7 @@ var concat = require('gulp-concat');
 var plumber = require('gulp-plumber');
 
 gulp.task('sass', function() {
-  gulp.src('public/stylesheets/style.scss')
+  gulp.src('public/stylesheets/styles.scss')
     .pipe(plumber())
     .pipe(sass())
     .pipe(csso())
@@ -15,28 +15,18 @@ gulp.task('sass', function() {
 
 gulp.task('compress', function() {
   gulp.src([
-    'public/vendor/angular.js',
-    'public/vendor/*.js',
-    'public/app.js',
-    'public/services/*.js',
-    'public/controllers/*.js',
-    'public/filters/*.js',
-    'public/directives/*.js'
+    'bower_components/bootstrap-sass-official/javascripts/bootstrap.js',
+    'bower_components/jquery/dist/jquery.min.js',
+    'public/javascripts/*.js'
   ])
     .pipe(concat('app.min.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('public'));
-});
-
-gulp.task('templates', function() {
-  gulp.src('public/views/**/*.html')
-    .pipe(templateCache({ root: 'views', module: 'MyApp' }))
-    .pipe(gulp.dest('public'));
+    .pipe(gulp.dest('public/javascript'));
 });
 
 gulp.task('watch', function() {
   gulp.watch('public/stylesheets/*.scss', ['sass']);
-  gulp.watch(['public/**/*.js', '!public/app.min.js', '!public/vendor'], ['compress']);
+  gulp.watch(['public/javascripts/*.js', '!public/app.min.js'], ['compress']);
 });
 
 gulp.task('default', ['sass', 'compress', 'watch']);

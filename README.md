@@ -18,9 +18,10 @@ TODO
 ## Future Development
 
   * Registration/Login Page
-  * MVC Framework: AngularJS?
   * Add configuration
   * Add support for database and models
+  * Live reload utility for Go (e.g. gin)
+  * Client-Side MVC Framework: AngularJS?
 
 ## Credits
 
