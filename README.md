@@ -18,9 +18,12 @@ TODO
 ## Future Development
 
   * Registration/Login Page
-  * Add configuration
+  * Add environment depending configuration
   * Add support for database and models
+  * Add support for sessions
   * Live reload utility for Go (e.g. gin)
+  * Panic recovery
+  * Logger
   * Client-Side MVC Framework: AngularJS?
 
 ## Credits
