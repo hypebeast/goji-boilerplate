@@ -1,19 +1,58 @@
+# !!Work in Progress!!
+**More coming soon!**
+
 # goji-boilerplate
 
 goji-boilerpalate is a project skeleton for Goji web framework, Twitter Bootstrap SASS, Font Awesome and Gulp. It also promotes seperation of concerns and app re-usability. This makes building middle and big size projects easier.
 
 ## Features
 
+General features:
+
   * Goji web framework
-  * Separated templates for header, navbar and footer. 
+  * Separated templates for base layout, header, navbar and footer. 
   * Bower for client side package management
+  * Gulp for compiling SASS to CSS and for minification and uglifying the Javascript code
+
+Client side frameworks:
+
   * Twitter Bootstrap (SASS version)
   * Font Awesome
   * Gulp
 
-## Usage
+## Getting Started
 
-TODO
+### Prerequisites
+
+  * [Go](http://golang.org/)
+  * [NodeJS + NPM](http://nodejs.org/)
+  * Make sure that $GOPATH is set
+
+### Installation
+
+The easiest way to get started is to *go get* the repository:
+
+```bash
+# Get the latest version from Github (make sure *$GOPATH* is set)
+go get github.com/hypebeast/goji-boilerplate.git
+
+cd $GOPATH/src/github.com/hypebeast/goji-boilerplate
+
+# Install NPM dependencies
+npm install
+
+# Install all Bower components
+bower install
+
+# Run Gulp
+gulp
+
+# Build the app
+go build
+
+# Run the app
+./goji-boilerplate
+```
 
 ## Future Development
 
@@ -26,9 +65,16 @@ TODO
   * Logger
   * Client-Side MVC Framework: AngularJS?
 
+## Contribute
+
+  * Fork [goji-boilerplate](https://github.com/hypebeast/goji-boilerplate)
+  * Make some changes
+  * Send your Pull Request
+  * Thanks :)
+
 ## Credits
 
-TODO
+-
 
 ## License
 
