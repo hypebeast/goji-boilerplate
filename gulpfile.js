@@ -29,4 +29,4 @@ gulp.task('watch', function() {
   gulp.watch(['public/javascripts/*.js', '!public/app.min.js'], ['compress']);
 });
 
-gulp.task('default', ['sass', 'compress', 'watch']);
+gulp.task('default', ['sass', 'compress']);
