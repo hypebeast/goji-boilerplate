@@ -3,13 +3,13 @@ package main
 import (
 	"github.com/hypebeast/goji-boilerplate/routes"
 
+	"github.com/hypebeast/gojistatic"
 	"github.com/zenazn/goji"
-	"net/http"
 )
 
 func main() {
 	// Serve static files
-	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("public"))))
+	goji.Use(gojistatic.Static("public", gojistatic.StaticOptions{SkipLogging: true}))
 
 	// Add routes
 	routes.Include()
