@@ -54,6 +54,10 @@ go build
 ./goji-boilerplate
 ```
 
+## Directory Structure
+
+TODO
+
 ## Future Development
 
   * Registration/Login Page

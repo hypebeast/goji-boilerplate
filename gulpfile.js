@@ -4,10 +4,15 @@ var csso = require('gulp-csso');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 var plumber = require('gulp-plumber');
+var del = require('del');
 
 var paths = {
   fonts: 'bower_components/font-awesome/fonts/*'
 };
+
+gulp.task('clean', function(cb) {
+  del(['public/javascript/app.min.js', 'fonts', 'public/stylesheets/*.css'], cb);
+});
 
 gulp.task('sass', function() {
   gulp.src('public/stylesheets/styles.scss')
@@ -19,8 +24,8 @@ gulp.task('sass', function() {
 
 gulp.task('compress', function() {
   gulp.src([
-    'bower_components/bootstrap-sass-official/javascripts/bootstrap.js',
     'bower_components/jquery/dist/jquery.min.js',
+    'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js',
     'public/javascripts/*.js'
   ])
     .pipe(concat('app.min.js'))
@@ -39,4 +44,4 @@ gulp.task('watch', function() {
   gulp.watch(['public/javascripts/*.js', '!public/app.min.js'], ['compress']);
 });
 
-gulp.task('default', ['sass', 'compress', 'fonts', 'watch']);
+gulp.task('default', ['clean', 'sass', 'compress', 'fonts', 'watch']);

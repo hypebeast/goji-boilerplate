@@ -14,3 +14,7 @@ func Home(w http.ResponseWriter, req *http.Request) {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 	}
 }
+
+func About(w http.ResponseWriter, req *http.Request) {
+	// TODO
+}
