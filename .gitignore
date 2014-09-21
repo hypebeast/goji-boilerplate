@@ -1,6 +1,6 @@
 bower_components
 node_modules
-public/javascript/app.min.js
-public/stylesheets/styles.css
+public/javascript/*.js
+public/stylesheets/*.css
 public/fonts
 goji-boilerplate
