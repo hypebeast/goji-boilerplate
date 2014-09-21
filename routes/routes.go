@@ -1,8 +1,8 @@
 package routes
 
 import (
-	"github.com/hypebeast/goji-boilerplate/apps/bookmarks/routes"
-	"github.com/hypebeast/goji-boilerplate/controllers"
+	"../apps/bookmarks/routes"
+	"../controllers"
 
 	"github.com/zenazn/goji"
 	"github.com/zenazn/goji/web"

@@ -3,7 +3,7 @@ package controllers
 import (
 	"net/http"
 
-	"github.com/hypebeast/goji-boilerplate/helpers"
+	"../../../helpers"
 )
 
 func BookmarksHome(w http.ResponseWriter, req *http.Request) {

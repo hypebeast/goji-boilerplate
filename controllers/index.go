@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"github.com/hypebeast/goji-boilerplate/helpers"
+	"../helpers"
 
 	"net/http"
 )

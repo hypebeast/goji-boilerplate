@@ -1,11 +1,12 @@
 package routes
 
 import (
-	"github.com/hypebeast/goji-boilerplate/apps/bookmarks/controllers"
+	"../controllers"
+
+	"net/http"
 
 	"github.com/zenazn/goji"
 	"github.com/zenazn/goji/web"
-	"net/http"
 )
 
 func Bookmarks(m *web.Mux) {

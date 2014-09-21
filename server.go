@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/hypebeast/goji-boilerplate/routes"
+	"./routes"
 
 	"github.com/hypebeast/gojistatic"
 	"github.com/zenazn/goji"
