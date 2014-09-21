@@ -10,13 +10,14 @@ goji-boilerpalate is a project skeleton for Goji web framework, Twitter Bootstra
 General features:
 
   * Goji web framework
+  * gojistatic middleware to deliver static content 
   * Separated templates for base layout, header, navbar and footer. 
   * Bower for client side package management
-  * Gulp for compiling SASS to CSS and for minification and uglifying the Javascript code
+  * Gulp for compiling SASS to CSS, compiling CoffeeScript to Javascript and for minification and uglifying the Javascript code
 
 Client side frameworks:
 
-  * Twitter Bootstrap (SASS version)
+  * Twitter Bootstrap SASS
   * Font Awesome
   * Gulp
 
@@ -34,24 +35,28 @@ The easiest way to get started is to *go get* the repository:
 
 ```bash
 # Get the latest version from Github (make sure *$GOPATH* is set)
-go get github.com/hypebeast/goji-boilerplate.git
-
-cd $GOPATH/src/github.com/hypebeast/goji-boilerplate
+$ cd $GOPATH/src
+$ git clone https://github.com/hypebeast/goji-boilerplate.git mywebproject
+$ cd mywebproject
 
 # Install NPM dependencies
-npm install
+$ npm install
 
 # Install all Bower components
-bower install
+$ bower install
 
-# Run Gulp
-gulp
+# Install all dependencies
+$ go get github.com/zenazn/goji
+$ go get github.com/hypebeast/gojistatic
 
-# Build the app
-go build
+# Build the server
+$ go build server.go
 
-# Run the app
-./goji-boilerplate
+# Build and compile all assets
+$ gulp
+
+# Run the server and visit http://localhost:8000
+$ ./server
 ```
 
 ## Directory Structure

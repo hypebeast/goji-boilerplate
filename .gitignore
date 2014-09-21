@@ -3,4 +3,4 @@ node_modules
 public/javascript/*.js
 public/stylesheets/*.css
 public/fonts
-goji-boilerplate
+server
