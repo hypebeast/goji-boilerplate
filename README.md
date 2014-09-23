@@ -1,6 +1,3 @@
-# !!Work in Progress!!
-**More coming soon!**
-
 # goji-boilerplate
 
 goji-boilerpalate is a project skeleton for Goji web framework, Twitter Bootstrap SASS, Font Awesome and Gulp. It also promotes seperation of concerns and app re-usability. This makes building middle and big size projects easier.
